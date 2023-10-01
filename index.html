@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gestão Financeira</title>
+      
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body>        
+        <main>
+            <h2>GESTÃO FINANCEIRA</h2>
+            <div class="geral">
+                <div>
+                    Entradas: R$
+                    <span class="entradas">0.00</span>
+                </div>
+                <div>
+                    Saidas: R$
+                    <span class="saidas">0.00</span>
+                </div>
+                <div>
+                    Total: R$
+                    <span class="total">0.00</span>
+                </div>
+            </div><!--geral-->
+            <div class="cadastro">
+                <div class="div-desc">
+                    <label for="desc">Descrição</label>
+                    <input type="text" id="desc"/>
+                </div><!--div-desc-->
+                <div class="div-valor">
+                    <label for="valor">Valor</label>
+                    <input type="number" id="valor"/>
+                </div><!--div-valor-->
+                <div class="div-tipo">
+                    <label for="tipo">Tipo</label>
+                    <select id="tipo">
+                        <option>Entrada</option>
+                        <option>Saída</option>
+                    </select>
+                </div><!--div-tipo-->
+                <button id="btnAdd">Adicionar</button>
+            </div><!--cadastro-->
+            <div class="div-tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th class="coluna-valor">Valor</th>
+                            <th class="coluna-tipo">Tipo</th>
+                            <th class="coluna-acao"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div><!--div-tabela-->
+        </main><!---main-->
+        <script src="script.js"></script>
+      </body>
+</html>
